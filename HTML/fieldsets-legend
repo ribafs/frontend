@@ -1,0 +1,24 @@
+Forms
+
+Field sets and legends
+
+You can group fields, for example name (first, last, middle, title etc.) or address (line 1, line 2, county, country, postal code, country etc.) using the fieldset tag.
+
+Within the field set, you can set a caption with the legend tag.
+
+
+<form action="somescript.php" >
+    <fieldset>
+        <legend>Name</legend>
+        <p>First name <input name="firstName"></p>
+        <p>Last name <input name="lastName"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Address</legend>
+        <p>Address <textarea name="address"></textarea></p>
+        <p>Postal code <input name="postcode"></p>
+    </fieldset>
+    <!-- etc. -->
+
+<input name="firstName" accesskey="f" tabindex="1">
+

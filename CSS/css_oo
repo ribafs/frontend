@@ -1,0 +1,65 @@
+OOCSS
+
+Importante separar a aparência/formatação da estrutura/layout.
+
+Exemplo que pode ser otimizado com classes:
+
+#button {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border: solid 1px #ccc;
+  background: linear-gradient(#ccc, #222);
+  box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
+}
+
+#box {
+  width: 400px;
+  overflow: hidden;
+  border: solid 1px #ccc;
+  background: linear-gradient(#ccc, #222);
+  box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
+}
+
+#widget {
+  width: 500px;
+  min-height: 200px;
+  overflow: auto;
+  border: solid 1px #ccc;
+  background: linear-gradient(#ccc, #222);
+  box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
+}
+
+Ao invés de repetir as propriedades:
+
+  border: solid 1px #ccc;
+  background: linear-gradient(#ccc, #222);
+  box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
+
+Em todas as classes, criar uma nova classe:
+
+.skin{
+  border: solid 1px #ccc;
+  background: linear-gradient(#ccc, #222);
+  box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
+}
+
+E sempre que usar uma das 3 iniciais usar também a skin:
+
+class = "box skin"
+
+Com isso temos código mais organizado e eficiante, deixando o site mais rápido.
+
+bom mesmo é isso:
+
+.btn{
+/* Código básico */
+}
+
+.btn .btn-color{
+
+}
+
+.btn .btn-color btn-size{
+
+}

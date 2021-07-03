@@ -1,0 +1,6 @@
+Accesskeys
+
+Access keys allow easier navigation by assigning a keyboard shortcut to a link (which will usually gain focus when the user presses “Alt” or “Ctrl” + the access key).
+
+<a href="somepage.html" accesskey="s">Some page</a>
+

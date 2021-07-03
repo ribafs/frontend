@@ -1,0 +1,143 @@
+Menu admin
+
+Dashboard com 3 colunas de botões grandes ao centro
+Usando o template AdminLTE no CakePHP3
+
+Pacotes Usuários Sites Bancos Backup SSL Status PHP Logs Segurança
+
+Pacotes
+CRUD
+
+Nome do pacote - nome_user (nome com sufixo _nomeuser. Ex: joomla_admin)
+Domínios -
+Espaço em disco -
+Bancos de dados
+
+Usuários
+CRUD
+Nome - 
+Sobrenome -
+E-mail - 
+Role - role_id int not null
+Status - ativo/inativo
+Domínio
+login
+senha
+Alertar sobre a força da senha
+
+Roles
+id
+role
+CRUD
+
+Sites
+CRUD
+
+Pacote - combo
+Dono - combo
+Domínio
+Email
+Versão PHP
+SSH
+OpenBasedir
+Status
+Gerenciar site
+    Instaladores:
+    - Wordpress
+    - Joomla
+    - Laravel
+    - CakePHP
+    - Opencart
+    - DocRoot (em branco para instalar no raiz)
+    Gerenciador de arquivos
+    Logs
+    Domínios
+    Cron
+    SSL
+    OpenBasedir
+    Acessar - dominio
+
+Bancos de Dados
+CRUD
+
+Adminer
+phpMyAdmin
+Site
+nomedb
+userdb
+
+Backups
+Create
+Restore
+Agendar
+GoogleDrive ou outro (Ver API)
+
+Backup Incremental
+CRUD
+
+SSL com Certbot
+email
+dominio (antes configure no servidor web: www.dominio dominio)
+
+Ferramentas
+
+run-php
+web maker
+Calculadora
+Chat
+...
+
+Docker (imagens e containers)?
+
+Segurança
+- php
+- apache
+- nginx
+- mysql
+- firewall
+- fail2ban
+- código
+- modSecurity conf
+- modSecurity rules
+ModSecurity Status On/Off
+SecAuditEngine - On/Off
+SecRuleEngine - On/Off
+SecDebugLogLevel - 0-9
+SecAuditLogParts - AFH
+SecAuditLogRelevantStatus - "^(?:5|4(?!04))"
+SecAuditLogType - Serial
+CSF
+Firewall On/Off
+Permitir e Bloquear IP
+
+
+Documentação
+- comandos linux
+- shell scripts
+- virtualhost
+- 
+
+Serviços Gerenciamento
+Reiniciar para cada um
+
+Top - mostrar os processos e permitir matar cada um
+
+Porta do Painel
+text
+
+Gerenciamento de pacotes?
+
+PHP
+Instalar extensões
+
+- Versão
+- Listar todas com botões ao lado Instalar Desinstalar
+
+PHP.INI
+
+Selecionar versão (combo)
+
+Editar textarea
+
+
+

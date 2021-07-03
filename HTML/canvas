@@ -1,0 +1,9 @@
+Canvas
+
+A major addition to HTML5 is the canvas element. It is designed to provide a canvas onto which JavaScript can be used to paint all manner of dynamic images such as graphs, animated sprites, or daft cat pictures.
+
+
+<canvas id="wittykitty" width="800" height="450">
+    <!-- Fall-back content here, just like with video and audio -->
+</canvas>
+

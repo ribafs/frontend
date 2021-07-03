@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Página de exemplo com o BootStrap 4">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>My First Bootstrap Page</title>
+
+    <style>
+    img {
+      width: 40%;
+      height: auto;  
+      border: 3px solid green;
+      padding: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;  
+    }
+    .col-centered{
+        margin: 0 auto;
+        float: none;
+    }
+    .bg{
+        background-color: #d7e3ef;
+    }
+    </style>
+  </head>
+<body>
+<main class = "container">
+
+    <header class="jumbotron text-center">
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect!</p> 
+    </header>
+
+    <section>
+        <h1 class="text-center bg" data-toggle="tooltip" title="Formulário de exemplo usando o BootStrap 4">Form Exemplo (passe o mouse)</h1>
+
+        <div class="container">
+          <h2>Form Validation</h2>
+          <p>In this example, we use <code>.needs-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
+          <p>Try to submit this form before filling out the input fields, to see the effect.</p>
+          <form action="/action_page.php" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="uname">Username:</label>
+              <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+    </section>
+    <br><br>
+
+    <figcaption>
+        <div class="container text-center">
+          <h2 class="text-center bg">Image Circle with BG4</h2>
+          <p>The .rounded-circle class shapes the image to a circle:</p>            
+          <img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre"> 
+        </div>
+    </figcaption>
+    <br><br>
+
+    <section class="container mt-3">
+      <h2>Centered Modal Example</h2>
+      <p>Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class.</p>
+      <!-- Button to Open the Modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+         modal
+      </button>
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              Apenas um exemplo de uso do modal
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>      
+    </section>
+    <br><br>
+
+    <section>
+        <h1 class="text-center bg">Table exemplo</h1>
+        <!-- https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+        <table class="table table-stripped table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Default</td>
+            <td>Defaultson</td>
+            <td>def@somemail.com</td>
+          </tr>      
+          <tr>
+            <td>Primary</td>
+            <td>Joe</td>
+            <td>joe@example.com</td>
+          </tr>
+          <tr class="table-success">
+            <td>Success</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Danger</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>Info</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+          <tr>
+            <td>Warning</td>
+            <td>Refs</td>
+            <td>bo@example.com</td>
+          </tr>
+          <tr>
+            <td>Active</td>
+            <td>Activeson</td>
+            <td>act@example.com</td>
+          </tr>
+          <tr>
+            <td>Secondary</td>
+            <td>Secondson</td>
+            <td>sec@example.com</td>
+          </tr>
+          <tr>
+            <td>Light</td>
+            <td>Angie</td>
+            <td>angie@example.com</td>
+          </tr>
+          <tr class="table-dark">
+            <td>Dark</td>
+            <td>Bo</td>
+            <td>bo@example.com</td>
+          </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <footer class="jumbotron text-center" style="margin-bottom:0">
+      <p>Rodapé da Página</p>
+    </footer>
+
+</main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+    <script>
+    // Disable form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+  </body>
+</html>

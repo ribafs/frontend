@@ -1,0 +1,21 @@
+<!-- Hero Header Jumbotron -->
+<div class="jumbotron">
+<h1 class="display-3">Bootstrap 4 Template</h1>
+<p class="lead">This is a demo theme created with Bootstrap 4. Add some attractive heading for your page here.</p>
+<hr class="my-4">
+<p>Add your subtitle here to explain more about this page in detail.</p>
+<a class="btn btn-primary btn-lg btn-spl" href="#" role="button">View Facebook Page</a>
+</div>
+
+<style>
+/* Header Jumbotron */
+.jumbotron{
+color: #990000;
+background-color: #fafafa;
+margin-bottom: -20px;
+background: #fff;
+text-align: center;
+border-radius: 0;
+}
+</style>
+

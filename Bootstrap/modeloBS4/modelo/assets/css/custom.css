@@ -1,0 +1,48 @@
+/* Generics */
+
+.element-center{
+    display: flex;
+    align-items: center;/* Usado para o caso de estar aplicado o display: flex */
+}
+
+/* Contact Form*/
+
+.contact-form{
+ margin: 6em 0;
+ position: relative;  
+}
+
+.contact-form h1{
+ padding:2em 1px;
+ color: #F97300; 
+}
+.contact-form .right{
+ max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+ background:  #F97300;
+ color: #fff;
+ border:0;
+}
+.contact-form .right .form-control::placeholder{
+ color: #888;
+ font-size: 16px;
+}
+/* \Contact Form*/
+
+/*Portfolio*/
+.portfolio{
+ margin: 4em 0;
+    position: relative; 
+}
+.portfolio h1{
+ color:#F97300;
+ margin: 2em; 
+}
+.portfolio img{
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
+  
+}
+/*\Portfolio*/

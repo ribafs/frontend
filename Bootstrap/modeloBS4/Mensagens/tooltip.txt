@@ -1,0 +1,14 @@
+
+<a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
+<a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Hover</a>
+<a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover</a>
+<a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a>
+<a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover</a>

@@ -1,0 +1,14 @@
+<!-- Quote-->
+  <section>
+    <div class="container">
+      <blockquote class="blockquote text-center mb-0">
+        <svg class="lnr text-muted quote-icon pull-left">
+          <use xlink:href="#lnr-heart"> </use>
+        </svg>
+        <p class="mb-0">There is no place like 127.0.0.1</p>
+        <footer class="blockquote-footer">Someone famous in
+          <cite title="Source Title">Source Title</cite>
+        </footer>
+      </blockquote>
+    </div>
+  </section>

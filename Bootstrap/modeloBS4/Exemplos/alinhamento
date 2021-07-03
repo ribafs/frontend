@@ -1,0 +1,38 @@
+There's no need for extra CSS. What's already included in Bootstrap will work. Make sure the container(s) of the form are full height. Bootstrap 4 now has a h-100 class for 100% height...
+
+Vertical center:
+
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <form class="col-12">
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Another label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+    </form>   
+  </div>
+</div>
+
+https://www.codeply.com/go/raCutAGHre
+
+the height of the container with the item(s) to center should be 100% (or whatever the desired height is relative to the centered item)
+
+Note: When using height:100% (percentage height) on any element, the element takes in the height of it's container. In modern browsers vh units height:100vh; can be used instead of % to get the desired height.
+
+Therefore, you can set html, body {height: 100%}, or use the new min-vh-100 class on container instead of h-100.
+
+Horizontal center:
+
+    text-center to center display:inline elements & column content
+    mx-auto for centering inside flex elements
+    offset-* or mx-auto can be used to center columns (.col-)
+    justify-content-center to center columns (col-*) inside row
+
+Vertical Align Center in Bootstrap 4
+Bootstrap 4 full-screen centered form
+Bootstrap 4 center input group
+Bootstrap 4 horizontal + vertical center full screen

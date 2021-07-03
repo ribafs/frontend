@@ -1,0 +1,7 @@
+Compatibilidade com navegadores e dispositivos
+
+O HTML é compatível com todos os navegadores, especialmente a versão 4
+Mas o CSS e o JavaScript geralmente encontram problemas com algum navegador.
+Uma grande vantagem dos frameworks frontend, como BootStrap, jQuery entre outros é a forte compatibilidade com os principais navegadores e com todos os dispositivos: computador desktop, notebook, tablet e smartphone.
+
+

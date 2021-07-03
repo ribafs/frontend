@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Formulário de Demonstração HTML5</title>
+   </head>
+<body>
+
+ <h1 align="center">Formulário de Demonstração HTML5</h1>	
+
+<form method="POST" action="" onSubmit="return alert('Enviado com sucesso!')">
+Código <input type="text" id="codigo" name="codigo" required pattern="[A-Z]{3}[0-9]{4}" title="Entre com valores com 3 letras maiúsculas seguidas por 4 algarismos." />
+<br><br>
+Telefone <input type="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br>
+<input type="submit" name="enviar" value="Enviar"><br>
+</form>
+
+<style>
+/*input[type=text]:invalid, input[type=tel]:invalid {*/
+input:invalid {
+  border: 2px dashed #ff0000;
+}
+
+input:valid {
+  border: 2px solid #0000ff;
+}
+
+</style>
+
+<p>Observe que após digitar um valor válido (ABC1234 ou ZAS3456) a borda automaticamente deixa de ser vermelha.</p>

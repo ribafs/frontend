@@ -1,0 +1,78 @@
+<div class="wrapper">
+  <h1>Check me out, I'm a <a href="https://google.com/">googleiframe</a>!</h1>
+  <p>Resize me in your browser or pull me up in different size screen to see the magic of the <a href="https://benmarshall.me/resize-videos-proportionally-intrinsic-ratios/">intrinsic ratio technique</a>.</p>
+  <div class="iframe-container">
+    <iframe src="https://benmarshall.me/" frameborder="0"></iframe>
+  </div>
+</div>
+<style>
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+// Demo styles
+body {
+  background: url('https://benmarshall.me/wp-content/uploads/2018/08/background.gif');
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+h1,
+p {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+}
+
+a {
+  color: #31c1ef;
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 2rem;
+  width: 100%;
+}
+</style>
+
+<iframe src="news.html"
+width="40%" height="80"
+align="right">
+<p>See our <a href="news.html">newsflashes</a>.</p>
+</iframe>
+
+<iframe src="latin1head.html" width="100%" height="30"
+style="height:1.8em" scrolling="no"
+marginwidth="0" marginheight="0">
+</iframe>
+<br>
+<iframe src="latin1body.html" width="100%" height="60"
+style="height:4em"
+marginwidth="0" marginheight="0">
+</iframe>
+
+<div><a href="http://www.cssdrive.com" target="internal">CSS Drive</a></div>
+<iframe src="http://www.bing.com" style="width: 90%; height: 300px" name="internal"></iframe>
+
+

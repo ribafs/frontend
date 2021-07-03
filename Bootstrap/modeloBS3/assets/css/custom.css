@@ -1,0 +1,6 @@
+/* Generics */
+
+.element-center{
+    display: flex;
+    align-items: center;/* Usado para o caso de estar aplicado o display: flex */
+}

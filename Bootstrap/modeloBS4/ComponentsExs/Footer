@@ -1,0 +1,16 @@
+<!-- Footer -->
+<div class="jumbotron-fluid">
+<div class="container">
+<h2 style="padding-bottom: 30px">This is a footer section of your page.</h2>
+<p class="lead">&copy; All Rights Reserved <a href="https://www.webnots.com/">WebNots</a></p>
+</div>
+</div>
+
+<style>
+/* Footer Jumbotron */
+.jumbotron-fluid {
+background: lightgrey;
+padding: 50px;
+text-align: center;
+}
+</style>

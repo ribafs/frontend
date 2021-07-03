@@ -1,0 +1,28 @@
+.example {
+    color: #FFF;
+    text-align: justify;
+}
+    /* Adicionar um elemento ao HTML após, ocupando a linha inteira e invisível, pois é branco*/
+.example:after {
+    content: '';
+    display: inline-block; /* Tem características do inline e do block*/
+    width: 100%;
+    height: 0;
+}
+
+    .example-item {
+        width: 25%;
+        height: 150px;
+        display: inline-block; /* display inline não permite setar largura e altura */
+        /* O único que permite que ocupem uma mesma linha e sete largura e altura é inline-block*/
+    }
+    .example-item_first {
+        background-color: #FAA116;
+    }
+    .example-item_second {
+        background-color: #57C7C3;
+    }
+    .example-item_third {
+        background-color: #3B97D3;
+    }
+/* É um código responsivo */

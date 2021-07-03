@@ -1,0 +1,77 @@
+Embedded Content: Video e Audio
+
+HTML5 introduces a swathe of new tags to accommodate the increasingly interactive and multimedia nature of the Web. While there have been numerous ways to embed video, audio, and dynamic imagery in the past, the new web standard attempts to make this easier, more consistent, and more reliable.
+
+The simplest embedded (foreign) content is an image, applied to a web page with the img element. In the olden days, object, along with various plugins and proprietary devil dust, was used to bash and smash video and audio into submission. Although not without its (compatibility) problems, there is now a much better method for using various types of media in web pages.
+Video
+
+
+<video src="kitties.mp4" controls></video>
+
+Bam. There you go. Just like that. Simple.
+
+This will embed a video, complete with controls, in browsers that support the HTML5 video tag and the video content type.
+
+While HTML5 is pushing for a standard framework to play media, the media itself is not standardised across browsers. In practice, this means that it is unlikely all visitors will be able to experience your video (or audio) file. Some support WebM video, for example, while others support MPEG. Don’t lose too much sleep over this, though — see “Alternative content”, below.
+
+The controls attribute is optional but if you don’t want it - if you really want to take control away from the user - you can just slap in an autoplay attribute:
+
+
+<video src="kitties.mp4" autoplay></video>
+
+This will play the video on page load, won’t display any controls, and will most likely annoy the hell out of your visitors. Of course you could, if you were kind, put in both the controls and autoplay attributes.
+
+Advertise Here!
+On a long-established, well-read, well-respected web development resource.
+
+Other basic attributes at your disposal include width, height, loop, and muted.
+
+
+<video src="kitties.mp4" width="300" height="200" loop muted autoplay controls></video>
+
+If you insist on using autoplay, bringing muted (and controls) to the party as well is a nice gesture and is a convention that many sites employ. If you have a video in an aside, for example, it can begin playing but the user can then opt to follow it by de-muting the video via the controls, if they choose, decreasing the likelihood of irritation.
+Poster
+
+You can specify a placeholder image, which will be displayed before the video is played, with the poster attribute.
+
+
+<video src="kitties.mp4" poster="fluffy.jpg" controls></video>
+
+The specified image will stretch or shrink to fit the dimensions of the video, regardless of the original size of the image.
+Fall-back content
+
+So, yes, there is an opening and closing tag. Whatever could go in between them? Why, fall-back content: content that is displayed if the browser doesn’t understand the video element. That could be a few words, a chunk of HTML, or a “really funny” and “highly original” Lolcats image.
+
+
+<video src="kitties.mp4" controls>
+    <img src="hahahaha.jpg" alt="Hilarious cat and caption saying 'soz'.">
+</video>
+
+Alternative content
+
+As already noted, it’s not only compatibility with the tag we need to worry about, but also compatibility with the source video itself. Luckily, more than one video source file can be offered up with the source element along with indications of the requirements of the file in the value of the type attribute. The browser will then take the first one it’s happy with.
+
+
+<video controls>
+    <source src="kitties.mp4" type="video/mp4; codecs='avc1, mp4a'">
+    <source src="kitties.webm" type="video/webm; codecs='vp8.0, vorbis'">
+    <p>Browser no likey HTML 5.</p>
+</video>
+
+Here, a browser should figure out if it can handle the “video/mp4” MIME type and if it has the stated codec to decipher it. If it doesn’t, it should move on to the next and try again with the details set out in the second source element.
+Audio
+
+Applying audio is just like applying video. Using the audio tag, the structure is the same as using video and the attributes src, controls, autoplay and loop can all be used in the same way.
+
+
+<audio src="meow_mix.mp3" controls>
+    Your stupid browser doesn't support HTML 5 audio.
+</audio>
+
+Alternative content can also be defined in exactly the same way as with the video and source tags.
+
+Much greater control can be exercised over video and audio using JavaScript, with the ability to manipulate aspects of playback and user controls in more detail.
+
+
+https://www.w3schools.com/js/
+

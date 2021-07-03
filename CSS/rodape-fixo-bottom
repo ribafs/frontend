@@ -1,0 +1,35 @@
+Rodapé fixo e centralizado
+
+<style>
+footer {
+    text-align:center;
+    left: 0px;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+}
+</style>
+
+<footer>
+    <i>Adaptação de <a href="https://ribamar.net.br" target="_blank">Ribamar FS</a></i>
+</footer>
+
+</body>
+</html>
+
+
+Alternativa
+
+
+<style>
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:30px;
+    background-color:#E9ECEF;
+    font-size:12px;
+    text-align:center;
+}
+</style>

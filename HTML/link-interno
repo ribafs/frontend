@@ -1,0 +1,18 @@
+Skipping HTML
+
+To aid tabbing, you can supply links that allow users to jump over chunks of your web page. You might want to allow someone to jump over a plethora of navigation links, for example, so they can just read a page’s main content rather than cycle through all of the links:
+
+
+<header>
+    <h1>The Heading</h1>
+    <a href="#content">Skip to content</a>
+</header> 
+
+<nav>
+    <!--loads of navigation stuff -->
+</nav>
+
+<section id="content">
+    <!--lovely content -->
+</section>
+

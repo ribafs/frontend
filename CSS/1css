@@ -1,0 +1,113 @@
+CSS
+
+O CSS controla o deseign e o posicionamento do conteúdo.
+
+- Nível inicial
+
+- Introdução
+- Seletores
+- Unidades de medida
+- Texto
+- Cores
+- Margens
+- Paddings/Preenchimento
+- Bordas
+- BoxModel
+- Exemplos
+- Ferramentas
+
+- Nível Intermediário
+
+- Introdução
+- Seletores Class
+- Seletores ID
+- Agrupamento
+- Aninhamento/Nesting
+- Pseudo Classes
+- Propriedades abreviadas
+- Background image
+- Especificidade
+- Display
+- Pseudo elementos
+- Layout de página
+- Exemplos
+
+A especificação é a maneira de como os navegadores definem quais valores de propriedades são os mais relevantes para o elemento a ser utilizado. A especificação é baseada apenas nas regras impostas na composição de diferentes tipos de seletores.
+Como isso é calculado?
+
+A espeficicação é calculada na concatenação da contagem de cada tipo de seletor. Não é um peso aplicado na expressão correspondente.
+
+No caso de igualdade de especificação, a última declaração encontrada no CSS é aplicada ao elemento.
+
+
+
+- Nível Avançado
+
+- Introdução
+- Cantos arredondados
+- Shadows/sombras
+- Seletores universais, clilds/infantis e adjacentes
+- Cores avançadas
+- At-rules
+- Seletores de atributos
+- Transições
+- Backgrounds
+- Transformações
+- Gradientes
+- Media Queries
+
+Regra At
+
+Uma regra at (at-rule) é uma CSS statement iniciando com um caractere arroba, '@' (U+0040 ARROBA COMERCIAL), seguido por um indetificador e terminando no primeiro ponto e vírgula', ;' (U+003B SEMICOLON), fora de um bloco, ou no fim do primeiro Bloco CSS.
+
+Existem muitas regras at, criadas por seu identificador, cada um com uma sintaxe diferente:
+
+    @charset, definindo o conjunto de caracteres (codificação) usado pela folha de estilos.
+    @import, informando o motor CSS para incluir uma folha de estilos externa.
+    @namespace (en-US), informando ao motor CSS que todo o conteúdo deve ser considerado prefixado com um namespace XML.
+    Regras at aninhadas, um subconjunto de regras aninhadas que pode ser usado não somente como uma regra de uma folha de estilos, mas também dentro de um grupo de regras condicional:
+        @media, um grupo de regras condicional que é aplicado ao conteúdo caso o dispositivo de exibição cumpra com a condição de mídia definida.
+        @font-face, descrevendo o aspecto de uma fonte externa que deve ser baixada. 
+
+@document (en-US), um grupo de regras condicional que é aplicado ao conteúdo caso o documento cumpra com os critério definidos.
+@supports (en-US), um grupo de regras condicional que é aplicado caso o navegador cumpra com os critérios definidos.
+
+
+O seletor de atributos combina elementos baseado no valor de um atributo dado.
+
+/* <a> elementos com um atributo de título  */
+a[title] {
+  color: purple;
+}
+
+/* <a> elementos combinando com um href "https://example.org" */
+a[href="https://example.org"] {
+  color: green;
+}
+
+/* <a> elementos com um href contendo "example" */
+a[href*="example"] {
+  font-size: 2em;
+}
+
+/* <a> elementos com href terminando em ".org" */
+a[href$=".org"] {
+  font-style: italic;
+}
+
+[attr]
+    Representa um elemento com atributo de nome attr.
+[attr=value]
+    Representa um elemento com um atributo de nome attr, o qual o valor é  exatamente  value.
+[attr~=value]
+    Representa um elemento com um atributo de nome attr, o qual value é  uma lista de palavras separadas por espaços, e uma dessas é  exatamente  value.
+[attr|=value]
+    Representa um elemento com um atributo de nome attr  o qual o valor pode ser exatamente value ou pode começar com value imediatamente seguido por hífen - (U+002D). Isso somente é usado para linguagens que combinam sub-códigos.
+[attr^=value]
+    Representa um elemento com um atributo com nome attr que tem um valor prefixado (precedido) por value.
+[attr$=value]
+    Representa um elemento com um atributo de nome attr que  tem como sufixo (seguido) por value.
+[attr*=value]
+    Representa um elemento com um atributo de nome attr o qual valor contém ao menos uma ocorrência de value contido na string.
+[attr operator value i]
+    Adiciona um i (ou I) antes do fechamento das chaves {}, faz com que o valor seja comparado sem levar em conta caixa alta ou caixa baixa(para caracteres dentro da faixa ASCII). 

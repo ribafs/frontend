@@ -1,0 +1,25 @@
+.example {
+    color: #FFF;
+    text-align: center;
+}
+    /* Display inline não deixa definir largura e altura.  */
+    /* No display block um elemento ocupa toda a linha. Caso não configuremos a alrgura, ele ocupa toda a linha */
+    .example-item {
+        display: block; /* Display block é o padrão do CSS */
+        width: 33.333%;
+        height: 150px;
+    }
+    .example-item_first {
+        background-color: #FAA116;
+    }
+    .example-item_second {
+        background-color: #57C7C3;
+        margin-left: auto;
+    }
+    .example-item_third {
+        background-color: #3B97D3;
+        margin-right: auto;
+        margin-left: auto;
+        /* Isto somente funciona se for block, tiver largura e margin direita auto */
+    }
+

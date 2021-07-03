@@ -1,0 +1,151 @@
+Dicas de CSS
+
+A criação de uma marcação semântica e apropriada é o primeiro passo no caminho do desenvolvimento de um CSS tirando o máximo proveito de atributos e propriedades.
+
+Adote um sistema intuitivo ao nomear as coisas. Se você nomear ids e classes seguindo um padrão, terá facilitado seu trabalho de busca por erros e de atualização do documento. Eu recomendo um padrão baseado em nomes compostos pela combinação elementopai_elementofilho.
+
+Use notação abreviada sempre que possível:
+#000000 pode ser abreviado para #000 e 
+#336699 para #369
+
+Defina margin, padding e border na ordem certa: Top, Right, Bottom, Left. 
+A ordem para declarar margin, padding e border é a ordem horária a partir de top: Top, Right, Bottom, Left.
+
+Use abreviar propriedades.
+Abreviar as declarações para margin, padding, border, background, fonts, lists and outline economiza espaço.
+
+Troque
+
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+
+por
+margin: 10px;
+
+ou
+margin-top: 10px;
+margin-right: 20px;
+margin-bottom: 30px;
+margin-left: 40px;
+ 
+por
+margin: 10px 20px 30px 40px;
+
+Use UTF-8 em seus arquivos HTML.
+<meta charset="utf-8"/>
+
+Capitalizando título h1
+h1 {
+  text-transform: uppercase;
+}
+
+Defina famílias de fontes genéricas. “Ao declarar um determinado tipo de fonte a ser usado no site nós estamos supondo que o usuário tenha aquela fonte instalada em seu equipamento. Se ele não tiver a fonte instalada simplesmente não a verá. Por esta razão devemos especificar alternativas para a fonte principal e que a lista das alternativas termine com uma fonte genérica, como mostrado a seguir.
+
+p {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+A propriedade line-height especifica a altura de uma linha
+line-height: normal|number|length|initial|inherit;
+
+Podemos algumas vezes usar bordas para identificar containers.
+
+Use sempre indentação nas tags
+
+Em cada página
+
+Somente um ID deve ser usado
+Podemos usar várias classes ou elementos
+
+Nomes de elementos em seletores são case sensitivos
+
+Quando CSS é usada com XHTML, o nome dos elementos em seletores é case sensitivo. Para evitar surpresas eu recomendo usar sempre letras minúsculas parta nome de elementos em seletores. Valores de classe e de ID são case sensitivos tanto em HTML como em XHTML então evite misturar maiúsculas e minúsculas em nome de de classes e IDs (idealmente use tudo em minúsculas).” [Roger Johansson]
+
+Use nomes significativos, claros e simples para classes e IDs.
+
+Centralizar layout
+
+margin: 0 auto;
+
+para centrar seu layout na horizontal. "para centrar em elemento na horizontal é necessário declarar uma largura e margens horizontais." [Roger Johansson]
+
+XHTML:
+  <div id="wrap">
+  <!-- Layout aqui -->
+  </div>
+
+CSS:
+  #wrap {
+  width:760px; /* Altere a largura do layout aqui */
+  margin:0 auto;
+}
+
+Reset
+Um dos enganos mais comuns que eu tenho observado não só em principiantes como também em alguns desenvolvedores de nível intermediário é a não remoção da estilização padrão dos navegadores. A estilização padrão leva a diferenças na aparência do design em diferentes navegadores e não há motivo para xingar este ou aquele navegador. Ao codificar um web site você deve antes de mais nada, limpar/resetar os estilos padrão do navegador.
+
+Use uma folha de estilos mestre.
+
+master.css
+  @import url("reset.css");
+  @import url("global.css");
+  @import url("flash.css");
+  @import url("structure.css");
+<style type="text/css" media="Screen">
+  /*\*/@import url("css/master.css");/**/
+  </style>
+
+Gosto de dividir o CSS em reset, formatação e posicoes:
+- reset.css
+- format.css
+- layout.css
+
+Use comentários em seu CSS para explicar cada seção do arquivo (/* ... */)
+
+Sugestões para nomes de classes:
+
+  .width100 { width: 100%; }
+  .width75 { width: 75%; }
+  .width50 { width: 50%; }
+  .floatLeft { float: left; }
+  .floatRight { float: right; }
+  .alignLeft { text-align: left; }
+  .alignRight { text-align: right; }
+
+Use shorthands:
+
+margin:5px 0 4px 10px;
+
+É mais eficiente que:
+
+margin-top:5px;
+margin-right:0;
+margin-bottom:4px;
+margin-left:10px;
+
+Use compressores de CSS para minificar seus scripts
+
+Crie um índice das classes no início de cada arquivo
+
+Organizar o código sempre por seções e comentários no início de cada
+
+body {
+   /* Lembre de usar uma outra versão para o navegador IE 10 e mais antigos! */
+   display: flex;
+   justify-content: center; /* alinha os itens flex para o centro do container */
+   align-items: center; /* Centralizar os alinhamentos para todos os itens do elemento flexível no <body> */
+}
+
+display: flex;
+align-content: center; /* Centralizar o container flex */
+
+Centralização absoluta
+
+.Absolute-Center {
+  display: flex; // faz uso do Flexbox
+  align-items: center; // alinha verticalmente ao centro o conteúdo desejado
+  justify-content: center; // Alinha horizontalmente ao centro os line items
+  text-align: center; // opcional, mas ajuda a centralizar na horizontal o texto que quebra em míltiplas linhas
+}
+

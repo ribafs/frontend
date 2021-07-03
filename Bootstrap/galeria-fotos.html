@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="author" content="Mauricio Samy Silva">
+<title>Galeria de fotos iMasters InterCon</title>
+<style type="text/css">
+body {
+	background:#000;
+	font:12px Arial, Verdana,  Helvetica, sans-serif;
+	text-align:center;
+	padding:0;
+	margin:0;
+	}
+#topo {
+	position:relative;
+	height:53px;
+	background:#1daecb url('topo-galeria.jpg') center no-repeat;
+	margin-bottom:30px;
+	}
+#topo h1, #topo h2 {
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	position: absolute; 
+	 }
+.galeria {
+	width:680px; 
+	margin:0 auto;
+	text-align:left; 
+	}
+.img-aqui { 
+	background: #fff url('http://i79.photobucket.com/albums/j152/maujor/site/foto00.jpg') center no-repeat; 
+	width:500px; 
+	height:375px; 
+	position:relative; 
+	top:8px;
+	float:right; 
+	border:1px solid #fff;
+	}
+ul.fotos {
+	position:relative;
+	list-style:none;  
+	width:162px;
+	padding:1px;
+	background:#999;
+	margin:0; 
+	padding:0; 
+}
+.fotos:after {
+	display: block;
+	content: ".";
+	height: 0;
+	font-size:0; 
+	visibility: hidden;
+	clear: both;
+	}
+ul.fotos li {
+	width:75px;
+	height:50px;
+	float:left; 
+	border:2px solid #444;
+	margin:1px; 
+}
+ul.fotos li img {
+	border:none; 
+	width:75px;
+	height:50px;
+}
+ul.fotos li span img {
+	border:none;
+	width:500px;
+	height:375px;
+	height:auto;
+}
+ul.fotos a {
+	display: block;
+	} 
+ul.fotos a span {
+	display: none;
+}
+ul.fotos a:hover span.legenda {
+	display: block;
+	text-align:center; 
+	width:500px;
+	position:absolute;
+	top:375px;
+	left:-2px;
+}
+ul.fotos a:hover span {
+	display: block;
+    position: absolute; 
+	top:-5px; 
+	left: 177px; 
+	background:#fff;
+	border:2px solid #666;
+   }
+ul.fotos a:hover span.legenda {
+	padding:5px 0;
+	color:#333; 
+}
+#rodape {
+	background:#1daecb url('http://i79.photobucket.com/albums/j152/maujor/site/rodape-galeria.jpg') center repeat-x; 
+	height:30px;
+	margin:30px 0; 
+	color:#fff; 
+	text-align:right; 
+	font-size:80%; 
+	padding-right:10px;
+	}
+</style>
+<!--[if lte IE 6]>
+<style type="text/css">
+ul.fotos {
+	width:164px;
+	padding:  2px 0 1px 0;
+	}
+ul.fotos li {
+	margin-top:0; 
+}
+/* Fixes for IE */
+/* Fix IE. Hide from IE Mac \*/
+ul.fotos li { float: left; height: 1%; }
+ul.fotos li a { height: 1%; }
+/* End */
+ul.fotos a:hover {
+	text-decoration:none;
+	background: none; 
+	} 
+ul.fotos li {width:75px;}
+ul.fotos a:hover span.legenda {width:500px;}
+</style>
+<![endif]-->
+</head>
+<body>
+<div id="topo">
+		<h1>iMasters</h1>
+			<h2>Galeria de fotos com CSS</h2>
+</div>
+<div class="galeria">
+<div class="img-aqui">
+</div>
+
+<ul class="fotos"> 
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto01.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto01.jpg" alt=""  /><span class="legenda">Tiago Baeta, do iMasters, na abertura do evento, no Auditório "Criação e Desenvolvimento".</span></span></a>
+	</li>
+
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto02.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto02.jpg" alt=""  /><span class="legenda">Tiago Baeta, do iMasters, faz a abertura do evento no Auditório "Programação e Tecnologia", sendo observado por Alex Falcão, apresentador deste auditório.</span></span></a>
+	</li>
+	 
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto03.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto03.jpg" alt=""  /><span class="legenda">Participantes almoçam no Restaurante Côté Jardin, no hotel.</span></span></a>
+	</li>
+	 
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto04.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto04.jpg" alt=""  /><span class="legenda">Pedro Cabral e sua palestra sobre interatividade.</span></span></a>
+	</li>
+
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto05.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto05.jpg" alt=""  /><span class="legenda">Vivan Menezes, da Vivo, em sua palestra sobre Qualidade de Software.</span></span></a>
+	</li>
+	 
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto06.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto06.jpg" alt=""  /><span class="legenda">Auditório de Criação também com lotação máxima. Inscrições foram esgotadas com 1 mês e meio de antecedência.</span></span></a>
+	</li>
+
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto07.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto07.jpg" alt=""  /><span class="legenda">Salvio Padlipskas fala sobre melhores práticas de banco de dados.</span></span></a>
+	</li>
+
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto08.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto08.jpg" alt=""  /><span class="legenda">Juliana Constantino, da Agência Click, fala sobre Usabilidade.</span></span></a>
+	</li>
+	 
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto09.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto09.jpg" alt=""  /><span class="legenda">A DevMedia novamente apoia o iMasters InterCon.</span></span></a>
+	</li>
+
+<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto10.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto10.jpg" alt=""  /><span class="legenda">Recepcionista orienta os participantes do evento, na entreda principal do hotel, a respeito do centro de eventos.</span></span></a>
+	</li>
+	 
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto11.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto11.jpg" alt=""  /><span class="legenda">A DialHost e seu apoio ao iMasters InterCon</span></span></a>
+	</li>
+
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto12.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto12.jpg" alt=""  /><span class="legenda">Agencia 5Clicks com suas criações geniais e sua parceria com o iMasters</span></span></a>
+	</li>
+
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto13.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto13.jpg" alt=""  /><span class="legenda">Fabiana Go recebe presente da organização do evento.</span></span></a>
+	</li>
+	 
+	<li><a href="#"><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto14.jpg" alt="" /><span><img src="http://i79.photobucket.com/albums/j152/maujor/site/foto14.jpg" alt=""  /><span class="legenda">Criadores do Mundo Canibal e equipe de organização do evento, ao final do InterCon 2006.</span></span></a>
+	</li>
+</ul>
+</div>
+<div id="rodape">
+<p>Por: Maurício Samy Silva<br>
+  <a href="http://www.maujor.com/index.com" style="color:#ff0;" title="Tutoriais CSS, Web Standards, Acessibilidade, Tableless" >Site do Maujor</a></p>
+</div>
+</body>
+</html>

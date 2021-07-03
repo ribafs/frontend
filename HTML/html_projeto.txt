@@ -1,0 +1,26 @@
+Primeiro criar o CSS
+
+- Criar o reset
+- Criar o body
+- Criar o container na tag main
+- Criar h1
+- Criar h2
+- Criar p
+- Criar menu
+- Criar table
+- Criar img
+- 
+
+Projeto de Site com HTML
+
+- Tendo em mãos o layout gráfico do site
+- Comece com uma arquivo index.html em branco
+- Usando as tags semânticas divida a página em regiões, cada região com seu conteúdo
+- Crie uma tag main para conter todo o conteúdo da página, todas as demais dentro dela
+- Na primeira coloque a tag header e o h1 com o título da página
+- Depois a tag nav com o menu
+- Então uma tag section e em seu interior uma tag p e algum conteúdo dentro
+- Mais algumas tags section com tabela, form, etc
+- Uma tag footer com o rodapé da página
+
+

@@ -1,0 +1,69 @@
+<!-- Team section -->
+<div class="team">
+ <div class="container">
+    <h1 class="text-center">Our Team</h1>
+  <div class="row">
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/team-2.jpg" class="img-fluid" alt="team">
+    <div class="des">
+      Sara
+     </div>
+    <span class="text-muted">Manager</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/team-3.jpg" class="img-fluid" alt="team">
+    <div class="des">
+       Chris
+     </div>
+    <span class="text-muted">S.enginner</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/team-2.jpg" class="img-fluid" alt="team">
+    <div class="des">
+      Layla 
+     </div>
+    <span class="text-muted">Front End Developer</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/team-3.jpg" class="img-fluid" alt="team">
+     <div class="des">
+      J.Jirard
+     </div>
+    <span class="text-muted">Team Manger</span>
+   </div>
+  </div>
+ </div>
+</div>
+
+<style>
+.team{
+ margin: 4em 0;
+ position: relative;  
+}
+.team h1{
+ color:#F97300;
+ margin: 2em; 
+}
+.team .item{
+ position: relative;
+}
+.team .des{
+ background: #F97300;
+ color: #fff;
+ text-align: center;
+ border-bottom-left-radius: 93%;
+ transition:.3s ease-in-out;
+ 
+}
+</style>
+
+To make this effect , add the styles below to main.css file:
+.team .item:hover .des{
+ height: 100%;
+ background:#f973007d;
+ position: absolute;
+ width: 89%;
+ padding: 5em;
+ top: 0;
+ border-bottom-left-radius: 0;
+}

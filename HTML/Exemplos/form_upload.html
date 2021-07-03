@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Formulário com arquivo anexo</title>
+   </head>
+<body>
+
+ <h1 align="center">Formulário com arquivo anexo</h1>	
+
+<form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+    <label>Imagem de perfil: <input type="file" name="image"></label>
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+Múltiplos anexos
+
+<form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+    <label>Imagem de perfil: <input type="file" name="image[]" multiple="multiple"></label>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Formulários para upload precisam no HTML5 de um novo atributo:
+formenctype
+-->

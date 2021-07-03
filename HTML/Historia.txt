@@ -1,0 +1,16 @@
+HTML
+Version     Specification               Release Date
+1.0         N/A                         1994-01-01
+2.0         RFC 1866                    1995-11-24
+3.2         W3C: HTML 3.2 Specification 1997-01-14
+4.0         W3C: HTML 4.0 Specification 1998-04-24
+4.01        W3C: HTML 4.01 Specification 1999-12-24
+5           WHATWG: HTML Living Standard 2014-10-28
+5.1         W3C: HTML 5.1 Specification  2016-11-01
+
+https://goalkicker.com/HTML5Book
+
+O que ficou obsoleto
+https://html.spec.whatwg.org/multipage/obsolete.html
+
+

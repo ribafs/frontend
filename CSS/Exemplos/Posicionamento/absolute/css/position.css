@@ -1,0 +1,43 @@
+.elementExample {
+  width: 200px;
+  height: 200px;
+  line-height: 200px; /* texto centralizado */
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.elementExample_first {
+  position: absolute;
+  right: 0; /* Após adicionar o position, então podemos usar right, left, bottom, etc*/
+  background-color: #6c5ce7;
+}
+.elementExample_second {
+  position: absolute;
+  left: 50%; /* Não move para o centro, mas somente sua lateral esquerda para o centro */
+  /*transform: translateX(-50%) translateY(-50%); Mover -50% da largura do elemento para a esquerda para que fique realmente no centro*/
+  transform: translate(-50%, -50%);
+  top: 50%;
+
+  background-color: #00b894;
+}
+.elementExample_last {
+  position: absolute;
+  background-color: #d63031;
+}
+
+.elementExample-internal {
+  position: absolute; /* Precisamos adicionar position ao pai, para que este o siga */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  line-height: 100px; /* centralizar a fonte*/
+  background-color: #00cec9;
+}
+/* Para que um elemento filho siga um elemento pai, a propriedade position do pai precisa ser diferente do default, que é static
+O position padrão de todos os elementos é static, parado 
+Quando usamos left, right, top ou bottom para alinhas ele irá alinhar pela margem esquerda do elemento e não pelo centro. Então precisamos usar o transform para alinhar pelo centro.
+*/
