@@ -26,3 +26,8 @@ if (person == null || person == "") {
   txt = "Olá " + person + "! Como está você hoje?";
 } 
 
+Referências
+
+https://www.webnots.com/create-alert-prompt-confirm-dialog-boxes-using-javascript/
+
+https://www.w3schools.com/jsref/met_win_alert.asp
