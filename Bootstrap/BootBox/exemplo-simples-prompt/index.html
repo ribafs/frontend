@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Exemplo simples com Bootbox.js</title>
+
+    <script src="assets/jquery-1.js"></script>
+    <script src="assets/bootstrap.js"></script>
+    <script src="assets/anchor.js"></script>
+    <script src="assets/bootbox.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.css" media="screen">
+
+</head>
+<body>
+
+<script>
+bootbox.alert("<h3>Conversão entre bases: binários, decimais e hexa</h3>", function(){ 
+    bootbox.prompt({
+        title: "Selecione e entre somente o número!",
+        value: ['1'],
+        inputType: 'checkbox',
+        inputOptions: [{
+            text: '1 - bin2dec',
+            value: '1'
+        },
+        {
+            text: '2 - dec2hex',
+            value: '2'
+        },
+        {
+            text: '3 - hex2bin',
+            value: '3'
+        },
+        {
+            text: '4 - dec2bin',
+            value: '4'
+        }],
+        callback: function (result) {
+            if(result == null) { 
+                alert('Você cancelou');
+            }else if (result != null) {
+              if (result.length > 1) {
+                alert("Favor selecionar somente uma opção");
+                return false;
+              } else {
+                alert(result);
+              }
+            }
+        }
+    });
+});
+
+// Ver exemplo completo em: https://github.com/ribafs/convert
+// http://bootboxjs.com/examples.html
+</script>
+
