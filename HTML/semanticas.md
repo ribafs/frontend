@@ -1,5 +1,11 @@
 ## Tags semânticas 
-O HTML5 trouxe várias tags semânticas para juntar à div: article, header, footer, section, etc. 
+O HTML5 trouxe várias tags semânticas, que não têm função e são apenas descritivas, para juntar à div: article, header, footer, section, etc. 
+
+Estas incluem main, header, footer, nav, video, article, section e outros.
+
+Estas tags dão uma estrutura descritiva ao seu HTML, tornam o seu HTML mais fácil de ler, e ajudam na Otimização de Motores de Pesquisa (SEO) e acessibilidade. A tag main do HTML5 ajuda os motores de busca e outros programadores a encontrar o conteúdo principal da sua página.
+
+Traduzido do https://www.freecodecamp.org/ com a versão gratuita do tradutor - www.DeepL.com/Translator
 
 A quantidade de sites e páginas na web crescem dia após dia, mas, junto com o crescimento da web também cresce os padrões, técnicas e principalmente melhores práticas de desenvolvimento. Uma dessas práticas que foi adicionada para a web seria dar semântica (sentido) á nossas páginas, hoje por exemplo leitores de tela conseguem saber o que significa cada pedaço de nosso site.
 
@@ -53,3 +59,23 @@ Comentários no HTML
 
 Link para e-mail (abre um cliente de e-mail para envio)
 <a href="mailto:ribafs@gmail.com?Subject='E-mail de teste'">Contato</a>	
+
+List of new semantic elements
+
+The semantic elements added in HTML5 are:
+```
+    <article>
+    <aside>
+    <details>
+    <figcaption>
+    <figure>
+    <footer>
+    <header>
+    <main>
+    <mark>
+    <nav>
+    <section>
+    <summary>
+    <time>
+```
+
