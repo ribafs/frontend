@@ -1,7 +1,7 @@
 ## footer.php
 ```
 <div class="container footer text-center">
-    <i>"Adaptação de <a href="https://ribafs.org" target="_blank">Ribamar FS</a></i>
+    <i>"Adaptação de <a href="https://ribamar.net.br" target="_blank">Ribamar FS</a></i>
 </div>
 <br>
 </body>
