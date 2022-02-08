@@ -31,7 +31,7 @@ TeXZilla
 WebDeveloper
 
 Ferramentas para desenvolvedor no Firefox
-Existem semelhantes em outros navegadores
+Existe semelhante em outros navegadores
 
 Ferramentas - Web Developer
 - Inspetor - Ctrl+Shift+C
@@ -40,9 +40,6 @@ Ferramentas - Web Developer
 - Scratchpad
 - Código fonte da página - Ctrl+U
 Entre outras
-
-Extra - Text To Speech
-http://www.voicerss.org/
 
 Scratch for Windows offline
 https://scratch.mit.edu/download
